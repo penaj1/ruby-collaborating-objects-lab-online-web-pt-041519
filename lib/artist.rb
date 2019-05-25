@@ -26,7 +26,7 @@ class Artist
     artist = @@all.find {|artist| artist.name == name}
     if artist == nil
       artist = Artist.new(name)
-      #artist.save
+      artist.save
     end
     artist
   end
